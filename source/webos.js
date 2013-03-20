@@ -8,7 +8,7 @@ enyo.requiresWindow(function() {
 				var tokens = PalmSystem.identifier.split(" ");
 				return {
 					appID: tokens[0],
-					process: tokens[1],
+					process: tokens[1]
 				};
 			},
 			launchParams: function() {
@@ -80,12 +80,12 @@ enyo.requiresWindow(function() {
 				}
 				if(hasNew) {
 					webos._throbId = PalmSystem.addNewContentIndicator();
-				}		
+				}
 			},
 			isActivated: function(inWindow) {
 				inWindow = inWindow || window;
 				if(inWindow.PalmSystem) {
-					return inWindow.PalmSystem.isActivated
+					return inWindow.PalmSystem.isActivated;
 				}
 				return false;
 			},
@@ -125,13 +125,13 @@ enyo.requiresWindow(function() {
 			 * that text type.
 			 *
 			 * Default option values:
-			 * 	{
-			 * 		phoneNumber: true,
-			 * 		emailAddress: true,
-			 * 		webLink: true,
-			 * 		schemalessWebLink: true,
-			 * 		emoticon: true
-			 * 	}
+			 *	{
+			 *		phoneNumber: true,
+			 *		emailAddress: true,
+			 *		webLink: true,
+			 *		schemalessWebLink: true,
+			 *		emoticon: true
+			 *	}
 			 **/
 			runTextIndexer: function(inText, inOptions){
 				if (inText && inText.length > 0 && PalmSystem.runTextIndexer) {
@@ -139,7 +139,7 @@ enyo.requiresWindow(function() {
 				}
 				return inText;
 			},
-			keyboard: undefined, //undefined unless a virtual keyboard is present
+			keyboard: undefined //undefined unless a virtual keyboard is present
 		};
 	}
 });
