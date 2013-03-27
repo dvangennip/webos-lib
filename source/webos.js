@@ -143,10 +143,4 @@ enyo.requiresWindow(function() {
 		};
 	}
 });
-<<<<<<< HEAD
 enyo.webos = webos;
-=======
-webOS = window.webos;
-enyo.webOS = webOS;
-enyo.webos = enyo.webOS;
->>>>>>> lowercase webos fixes some reference bugs
