@@ -9,14 +9,8 @@
 
 (function() {
 	enyo.dispatcher.listen(document, 'keyup', function(ev) {
-<<<<<<< HEAD
 		if (ev.keyIdentifier == "U+1200001" || ev.keyIdentifier == "U+001B" || ev.keyIdentifier == "Back") {
-			enyo.Signals && enyo.Signals.send && enyo.Signals.send('onbackbutton');
-			return true;
-=======
-		if (ev.keyIdentifier == "U+1200001" || ev.keyIdentifier == "U+001B") {
 			enyo.Signals.send('onbackbutton');
->>>>>>> 8985ca7b2c5b02bdf1f222621a07581bf950539d
 		}
 	});
 })();
